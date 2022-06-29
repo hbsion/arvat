@@ -1,9 +1,8 @@
 {
-  "name": "adonis-fullstack-app",
-  "version": "4.1.0",
-  "adonis-version": "4.1.0",
-  "description": "The fullstack application boilerplate for Adonisjs",
-  "main": "index.js",
+  "name": "arvat",
+  "version": "1.0.0",
+  "adonis-version": "1.0.0",
+  "description": "ARVAT for Web Development Adonis4 + React18 + Vite2 + Antd4 + Tailwindcss3",
   "scripts": {
     "start": "NODE_ENV=production node server.js",
     "dev": "concurrently --kill-others-on-fail 'vite' 'NODE_ENV=development adonis serve --dev'",
@@ -12,7 +11,10 @@
   },
   "keywords": [
     "adonisjs",
-    "adonis-app"
+    "react",
+    "vite",
+    "antd",
+    "tailwindcss"
   ],
   "author": "",
   "license": "UNLICENSED",
