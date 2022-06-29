@@ -20,14 +20,14 @@ hooks.after.providersBooted(async () => {
 		const node_env = Env.get("NODE_ENV", process.env.NODE_ENV);
 		if (node_env == "development") return {SCRIPT,CSS};
 		try {
-			const manifest = require(Helpers.publicPath("manifest.json"));
+			const manifest = require(Helpers.publicPath("dist/manifest.json"));
 			if (manifest) {
 				const manObj = manifest[ENTRY];
-				SCRIPT = `<script type="module" src="/${manObj.file}"></script>`;
+				SCRIPT = `<script type="module" src="/dist/${manObj.file}"></script>`;
 				if (manObj.css && manObj.css.length > 0) {
 					for (let index = 0; index < manObj.css.length; index++) {
 						if(index > 0) CSS += `\n\t`;
-						CSS += `<link rel="stylesheet" href="/${manObj.css[index]}">`;
+						CSS += `<link rel="stylesheet" href="/dist/${manObj.css[index]}">`;
 					}
 				}
 			}

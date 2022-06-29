@@ -12,10 +12,7 @@ import 'pace-js/themes/silver/pace-theme-minimal.css'
 
 import routes from '~react-pages'
 
-// eslint-disable-next-line no-console
-console.log(routes.filter(({path})=> !path))
-
-function App() {
+const App = ()=>{
   return (
     <Suspense fallback={<div className='bg-white w-screen h-screen box-border flex items-center justify-center'>
       Loading...

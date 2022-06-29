@@ -11,9 +11,8 @@ import 'pace-js'
 import 'pace-js/themes/silver/pace-theme-minimal.css'
 
 import routes from '~react-pages'
-console.log(routes.filter(({path})=> path == 'zad'));
 
-function App() {
+const App = ()=>{
   return (
     <Suspense fallback={<div className='w-screen h-screen box-border flex items-center justify-center'>
       Loading...

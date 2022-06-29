@@ -7,8 +7,7 @@ import Pages from 'vite-plugin-pages'
 export default defineConfig(({ command }) => ({
 	base: command === "serve" ? "" : "/",
 	publicDir: "fake_dir_so_nothing_gets_copied",
-  // mode: "production",
-  // root:"resources/views",
+  // publicDir:"public/dist",
 	build: {
 		manifest: true,
 		outDir: "public/dist",

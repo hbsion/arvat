@@ -81,7 +81,7 @@ const App = ()=>{
         <Button type="primary" className='btn-info'>Info</Button>
         <Button>Default</Button>
       </div>
-      <Button size="large" type="primary" href="https://github.com/hbsion/arvat" className='rounded'>Get Started</Button>
+      <Button size="large" type="primary" href="https://github.com/hbsion/arvat/blob/main/README.md" target="_blank" className='rounded'>Get Started</Button>
     </div>
   </>)
 }
