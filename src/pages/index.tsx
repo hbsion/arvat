@@ -46,7 +46,7 @@ const App = ()=>{
           </div>
         </div>
         <div className='flex-1' />
-        <a className='nav_item group flex items-center gap-1' href="https://github.com/hbsion" target="_blank">
+        <a className='nav_item group flex items-center gap-1' href="https://github.com/hbsion/arvat" target="_blank">
           <span>GitHub</span>
           <svg xmlns="http://www.w3.org/2000/svg" className="h-[1.2em] w-[1.2em]" viewBox="0 0 20 20" fill="currentColor">
             <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
@@ -81,7 +81,7 @@ const App = ()=>{
         <Button type="primary" className='btn-info'>Info</Button>
         <Button>Default</Button>
       </div>
-      <Button size="large" type="primary" href="/zad/" className='rounded'>Get Started</Button>
+      <Button size="large" type="primary" href="https://github.com/hbsion/arvat" className='rounded'>Get Started</Button>
     </div>
   </>)
 }
