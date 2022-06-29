@@ -2,7 +2,7 @@
 
 # ARVAT
 
-> [Adonis4](http://legacy.adonisjs.com/) + [Reactjs](https://reactjs.org/) + [Vitejs](https://vitejs.dev/) + [Antd](https://ant.design/) + [Tailwindcss](https://tailwindcss.com/) = :fire:
+> [Adonis4](http://legacy.adonisjs.com/) + [ReactJS](https://reactjs.org/) + [ViteJS](https://vitejs.dev/) + [Antd](https://ant.design/) + [Tailwindcss](https://tailwindcss.com/) = :fire:
 
 ## Installation
 
@@ -18,24 +18,24 @@ adonis new --blueprint hbsion/arvat <project-name>
 
 | Command | Description |
 |---------|-------------|
-| npm run dev | Start AdonisJS server in development with Vitejs in dev mode (hot reloading). Listen on [http://localhost:3000](http://localhost:3000). |
-| npm run build | Build your vitejs web application for production. |
+| npm run dev | Start AdonisJS server in development with ViteJS in dev mode (hot reloading). Listen on [http://localhost:3000](http://localhost:3000). |
+| npm run build | Build your ViteJS web application for production. |
 | npm start | Start AdonisJS server in production. |
 | npm lint | Lint your code with [ESLint](http://eslint.org) and [Standard](http://standardjs.com). |
 
 ## Features
 
-See [AdonisJS features](https://legacy.adonisjs.com/docs/about) and [Vite features](https://vitejs.dev/guide/features.html).
+See [AdonisJS features](https://legacy.adonisjs.com/docs/about) and [ViteJS features](https://vitejs.dev/guide/features.html).
 
 ## Live Demo
 
-[https://arvat.dopl.us](https://arvat.dopl.us)
+[https://arvat.dopl.us/zad/](https://arvat.dopl.us/zad/)
 
 
 ## Documentation
 
 - [AdonisJS](http://legacy.adonisjs.com/docs/)
-- [Reactjs](https://reactjs.org/docs/getting-started.html)
-- [Vitejs](http://vitejs.dev/guide/)
+- [ReactJS](https://reactjs.org/docs/getting-started.html)
+- [ViteJS](http://vitejs.dev/guide/)
 - [Antd](https://ant.design/docs/react/introduce)
 - [Tailwindcss](https://tailwindcss.com/docs/installation)
