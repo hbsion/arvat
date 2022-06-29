@@ -13,8 +13,8 @@ const App = ()=>{
   }
   useEffect(()=>{
     // 初始化
-    if(Number(window.localStorage.getItem('DARKMODE')) > 0) {
-      setIsDark(true);
+    if(["0","1"].indexOf(window.localStorage.getItem('DARKMODE')) > -1) {
+      setIsDark(window.localStorage.getItem('DARKMODE') == "1");
     } else {
       // 非深色 监听
       mediaQuery.addListener(darkModeHandler);
