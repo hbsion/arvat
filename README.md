@@ -2,7 +2,7 @@
 
 # ARVAT
 
-> [Adonis4](http://legacy.adonisjs.com/) + [Vitejs](https://vitejs.dev) = :fire:
+> [Adonis4](http://legacy.adonisjs.com/) + [Reactjs](https://reactjs.org/) + [Vitejs](https://vitejs.dev/) + [Antd](https://ant.design/) + [Tailwindcss](https://tailwindcss.com/) = :fire:
 
 ## Installation
 
@@ -35,4 +35,7 @@ See [AdonisJS features](https://legacy.adonisjs.com/docs/about) and [Vite featur
 ## Documentation
 
 - [AdonisJS](http://legacy.adonisjs.com/docs/)
-- [Vite.js](http://vitejs.dev/guide/)
+- [Reactjs](https://reactjs.org/docs/getting-started.html)
+- [Vitejs](http://vitejs.dev/guide/)
+- [Antd](https://ant.design/docs/react/introduce)
+- [Tailwindcss](https://tailwindcss.com/docs/installation)
