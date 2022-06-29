@@ -17,3 +17,13 @@
 const Route = use('Route')
 
 Route.on('/').render('main')
+
+
+Route.group(()=>{
+    Route.get("/",async({view})=>{
+        return view.render('zad')
+    })
+    Route.get("*",async({view})=>{
+        return view.render('zad')
+    })
+}).prefix('zad')
