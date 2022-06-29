@@ -3,13 +3,6 @@ import { Button, Switch } from 'antd'
 import { useEffect, useState } from 'react'
 const App = ()=>{
   const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-  // const isDark = Number(window.localStorage.getItem('DARKMODE')) > 0;
-  // const setIsDark = (val:boolean)=>{
-  //   window.localStorage.setItem('DARKMODE',Number(!!val)+"");
-  //   const body = document.body;
-  //   if(!!val) body.classList.add('dark');
-  //   if(!val) body.classList.remove('dark');
-  // }
   const [isDark,setIsDark] = useState(false);
   const darkModeHandler = ()=>{
     if (mediaQuery.matches) {
@@ -55,7 +48,11 @@ const App = ()=>{
         </a>
         <Switch checked={isDark} onChange={(e)=> { 
           setIsDark(e);
-          window.localStorage.setItem("DARKMODE",Number(!!e)+"");
+          if(!!mediaQuery.matches !== !!e) {
+            window.localStorage.setItem("DARKMODE",Number(!!e)+"");
+          } else {
+            window.localStorage.removeItem("DARKMODE");
+          }
         }} className='toggle-dark-mode' />
       </div>
     </div>
