@@ -13,7 +13,7 @@ const App = ()=>{
   }
   useEffect(()=>{
     // 初始化
-    if(["0","1"].indexOf(window.localStorage.getItem('DARKMODE')) > -1) {
+    if(["0","1"].indexOf(window.localStorage.getItem('DARKMODE') || "") > -1) {
       setIsDark(window.localStorage.getItem('DARKMODE') == "1");
     } else {
       // 非深色 监听
@@ -26,6 +26,16 @@ const App = ()=>{
     if(!!isDark) body.classList.add('dark');
     if(!isDark) body.classList.remove('dark');
   },[isDark])
+
+  const onChangeDark = (e:boolean)=>{
+    setIsDark(e);
+    if(!!mediaQuery.matches !== !!e) {
+      window.localStorage.setItem("DARKMODE",Number(!!e)+"");
+    } else {
+      window.localStorage.removeItem("DARKMODE");
+    }
+  }
+
   return (<>
     <div className='zx-top-header'>
       <div className='flex items-center gap-4 box-border'>
@@ -46,14 +56,7 @@ const App = ()=>{
             <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
           </svg>
         </a>
-        <Switch checked={isDark} onChange={(e)=> { 
-          setIsDark(e);
-          if(!!mediaQuery.matches !== !!e) {
-            window.localStorage.setItem("DARKMODE",Number(!!e)+"");
-          } else {
-            window.localStorage.removeItem("DARKMODE");
-          }
-        }} className='toggle-dark-mode' />
+        <Switch checked={isDark} onChange={onChangeDark} className='toggle-dark-mode' />
       </div>
     </div>
     <div className="w-screen h-screen flex flex-col gap-4 items-center justify-center">
